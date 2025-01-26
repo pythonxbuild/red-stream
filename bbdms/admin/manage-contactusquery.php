@@ -149,11 +149,11 @@ foreach($results as $result)
 																<?php if($result->status==1)
 {
 	?><td>Read<br />
-		<a href="manage-conactusquery.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Delete</a></td>
+		<a href="manage-contactusquery.php?del=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to delete')" >Delete</a></td>
 <?php } else {?>
 
-<td><a href="manage-conactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Pending</a><br />
-	<a href="manage-conactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Delete</a>
+<td><a href="manage-contactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('It was pending query, do you really want to read it?')" >Pending</a><br />
+	<a href="manage-contactusquery.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to delete?')" >Delete</a>
 </td>
 <?php } ?>
 										</tr>
